@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cineplex</title>
+    <style>
+        /* Resetare stiluri implicite */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Stiluri generale */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        header .logo h1 {
+            font-size: 24px;
+        }
+
+        header nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header .language ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        header .language ul li {
+            margin: 0 10px;
+        }
+
+        header .language ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Galerie filme */
+        .movies {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .movie {
+            text-align: center;
+        }
+
+        .movie img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .movie p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        footer .social-media a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Cineplex</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Filme</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Cinematografe</a></li>
+                <li><a href="#">Noutăți</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+        <div class="language">
+            <ul>
+                <li><a href="#">RO</a></li>
+                <li><a href="#">RU</a></li>
+                <li><a href="#">EN</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="movies">
+            <div class="movie">
+                <img src="icefall.jpg" alt="Icefall">
+                <p>Icefall</p>
+            </div>
+            <div class="movie">
+                <img src="telefonul_negru2.jpg" alt="Telefonul Negru 2">
+                <p>Telefonul Negru 2</p>
+            </div>
+            <div class="movie">
+                <img src="animale_in_tren.jpg" alt="Animalele în Tren">
+                <p>Animalele în Tren</p>
+            </div>
+            <div class="movie">
+                <img src="tfon_apex.jpg" alt="Tfon Apex">
+                <p>Tfon Apex</p>
+            </div>
+            <div class="movie">
+                <img src="springsteen.jpg" alt="Springsteen Izbavi Mă">
+                <p>Springsteen Izbavi Mă</p>
+            </div>
+            <div class="movie">
+                <img src="cursa.jpg" alt="Cursa">
+                <p>Cursa</p>
+            </div>
+            <div class="movie">
+                <img src="dracula.jpg" alt="Dracula">
+                <p>Dracula</p>
+            </div>
+            <div class="movie">
+                <img src="lupta_dupa_alta.jpg" alt="O Luptă După Alta">
+                <p>O Luptă După Alta</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Telegram</a>
+            <a href="#">TikTok</a>
+        </div>
+    </footer>
+</body>
+</html>
