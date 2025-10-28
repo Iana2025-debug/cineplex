@@ -16,7 +16,10 @@ body{
 .navbar-container{
     display: flex;
     align-items: center;
-background-color: blanchedalmond;
+padding: 0 50px;
+height: 100%;
+color: white;
+font-family: 'Sen', sans-serif;
 }
 
 
@@ -24,12 +27,30 @@ background-color: blanchedalmond;
     flex: 1;
 }
 
+.logo{
+    font-size: 30px;
+    color:  #228B22;
+}
 .meniu-container{
-    flex: 1;
+    flex: 6;
 }
 
+.menu-list{
+    display: flex;
+    list-style: none;
+
+}
+
+.menu-list-item{
+    margin-right: 30px;
+
+}
+.menu-list-item.active{
+    font-weight: bold;
+
+}
 .profil-container{
-    flex: 1;
+    flex: 2;
 }
 .sidebar{
     width: 50px;
