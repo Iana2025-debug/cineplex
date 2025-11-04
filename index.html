@@ -1,31 +1,126 @@
-<!DOCTYPE html>
 <html lang="ro">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap" rel="stylesheet">
-
-    <title>Cineplex</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Filmele tale preferate</title>
 </head>
+
 <body>
-<div class="navbar">
-    <div class="navbar-container">
-        <div class="logo-container"><h1 class="logo">logo</h1></a></div>
-        <div class="meniu-container">
-            <ul class="menu-list">
-                <li class="menu-list-item active">Acasă</li>
-                 <li class="menu-list-item">Filme</li>
-                  <li class="menu-list-item">Seriale</li>
-                   <li class="menu-list-item">Cele mai populare</li>
-                    <li class="menu-list-item">În trending</li>
-            </ul>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">Filplex</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Acasă</li>
+                    <li class="menu-list-item">Filme</li>
+                    <li class="menu-list-item">Seriale</li>
+                    <li class="menu-list-item">Cele mai populare</li>
+                    <li class="menu-list-item">În tendință</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="facebook-avatar.jpg" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profil</span>
+                    <i class="fas fa-caret-down"></i>
                 </div>
-        <div class="profil-container"> </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<div class="sidebar"></div>
+    <div class="sidebar">
+        <i class="left-menu-icon fas fa-search"></i>
+        <i class="left-menu-icon fas fa-home"></i>
+        <i class="left-menu-icon fas fa-users"></i>
+        <i class="left-menu-icon fas fa-bookmark"></i>
+        <i class="left-menu-icon fas fa-tv"></i>
+        <i class="left-menu-icon fas fa-hourglass-start"></i>
+        <i class="left-menu-icon fas fa-shopping-cart"></i>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-1.jpg');">
+                <img class="featured-title" src="1.jpg" alt="">
+                <p class="featured-desc">În capitala Republicii Moldova, încep să dispară copii. Ofițerul de poliție Vlad, ajutat de prietenul său de la serviciile secrete, decide să găsească prin toate mijloacele copiilor dispăruți, dar descoperă un secret care ar putea duce la o lovitură de stat.</p>
+                <button class="featured-button">VIZIONEAZĂ</button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">LANSĂRI NOI</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="2.jpg">
+                            <span class="movie-list-item-title">Comatogen</span>
+                            <p class="movie-list-item-desc">Alina, o asistentă medicală singură, se confruntă cu o problemă etică atunci când încearcă să găsească o sumă uriașă de bani pentru a-l împiedica pe fiul ei Radu, în vârstă de 22 de ani, să ajungă la închisoare.</p>
+                            <button class="movie-list-item-button">Vizionare</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="3.jpg" alt="">
+                            <span class="movie-list-item-title">Regretting You </span>
+                            <p class="movie-list-item-desc">Regretting You prezintă relația încordată dintre tânăra mamă Morgan Grant și fiica sa adolescentă Clara, care devine chiar mai dificilă după moartea tragică a lui Chris, soțul lui Morgan, care le obligă să înfrunte provocările vieții împreună.</p>
+                            <button class="movie-list-item-button">Vizionare</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="4.jpg" alt="">
+                            <span class="movie-list-item-title">Pădurea este a mea</span>
+                            <p class="movie-list-item-desc">O poveste plină de umor care lasă loc și pentru reflecții asupra valorilor și moralei într-o societate în schimbare.</p>
+                            <button class="movie-list-item-button">Vizionare</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="5.jpg" alt="">
+                            <span class="movie-list-item-title">
+Predator: Ținuturi Sălbatice</span>
+                            <p class="movie-list-item-desc">Un tânăr Predator izgonit de propriul clan își găsește un aliat neașteptat în căutarea sa a adversarului suprem.</p>
+                            <button class="movie-list-item-button">Vizionare</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="6.jpg" alt="">
+                            <span class="movie-list-item-title">
+Five Nights at Freddy's 2</span>
+                            <p class="movie-list-item-desc">Este anul 1987. Având o viață mai degrabă instabilă, Jeremy Fitzgerald își găsește de lucru ca agent de pază la noua pizzerie Freddy's Fazbear, dar când ajunge acolo își dă seama că nu totul este așa cum pare.</p>
+                            <button class="movie-list-item-button">Vizionare</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="7.jpg" alt="">
+                            <span class="movie-list-item-title">Tafiti: Aventură prin deșert</span>
+                            <p class="movie-list-item-desc">Tafiti, o suricată tânără, refuză inițial prietenia cu mistrețul Bristles. Când bunicul său este mușcat de un șarpe, Tafiti pornește în căutarea unei flori care conține leacul. Bristles vrea să demonstreze că aventurile sunt întotdeauna mai plăcute alături de prieteni.</p>
+                            <button class="movie-list-item-button">Vizionare</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="8.jpg" alt="">
+                            <span class="movie-list-item-title">Now You See Me: Jaful perfect 3</span>
+                            <p class="movie-list-item-desc">Un furt de diamante îi reunește pe maeștrii pensionați Horsemen și pe mai tinerii iluzioniști Greenblatt, Smith și Sessa, în timp ce aceștia vânează infractori periculoși.</p>
+                            <button class="movie-list-item-button">Vizionare</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-2.jpg');">
+                <img class="featured-title" src="img/f-t-2.png" alt="">
+                <p class="featured-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto illo dolor
+                    deserunt nam assumenda ipsa eligendi dolore, ipsum id fugiat quo enim impedit, laboriosam omnis
+                    minima voluptatibus incidunt. Accusamus, provident.</p>
+                <button class="featured-button">VIZIONEAZĂ</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
+
 </html>
