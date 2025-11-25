@@ -1,3 +1,4 @@
+
 const arrows = document.querySelectorAll(".arrow");
 const movieLists = document.querySelectorAll(".movie-list");
 
@@ -20,7 +21,6 @@ arrows.forEach((arrow, i) => {
   console.log(Math.floor(window.innerWidth / 270));
 });
 
-//TOGGLE
 
 const ball = document.querySelector(".toggle-ball");
 const items = document.querySelectorAll(
@@ -32,4 +32,16 @@ ball.addEventListener("click", () => {
     item.classList.toggle("active");
   });
   ball.classList.toggle("active");
+});
+
+
+const watchButtons = document.querySelectorAll(".movie-list-item-button, .featured-button");
+
+watchButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const link = btn.getAttribute("data-link"); 
+    if (link) {
+      window.location.href = link; 
+    }
+  });
 });
